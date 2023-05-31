@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>Job Application <span class="title_small">(Web)</span></h1>
+            <form action="">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">First Name</label> 
+                        <!-- In a form if you want that when you click on any name and the cursor should select the box beside it then use label tag for it and give the same id which you gave for input id -->
+                        <input id="first_name" name="first_name" placeholder="Enter your firstname">
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label> 
+                        <input id="last_name" name="last_name" placeholder="Enter your lastname">
+                    </div>
+                    <div class="form_control">
+                        <label for="e-mail">e-mail</label> 
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Enter your e-mail">
+                    </div>
+                    <div class="form_control">
+                        <label for="job-role">Job Role</label> 
+                       <select id="job_role" name="job-role">
+                        <option value="">Select Job Role</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="full_stack">Full Stack Developer</option>
+                        <option value="ui_ux">UI UX Designer</option>
+                       </select>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="address">Address</label> 
+                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter your address"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="city">City</label> 
+                        <input id="city" name="city" placeholder="Enter your City name">
+                    </div>
+                    <div class="form_control">
+                        <label for="pincode">Pincode</label> 
+                        <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode">
+                    </div>
+                    <div class="form_control">
+                        <label for="date">Date</label> 
+                        <input  type="date" id="date" name="date">
+                       <!--In date, if you don't want dd/mm/yyyy to be seen, you want a particular date to be seen which is visible continuously and user can change then in input tag where you select type ="date" use value="2023-01-10" -->
+                    </div>
+                    <div class="form_control">
+                        <label for="upload">Upload your CV</label> 
+                        <input type="file" id="upload" name="upload">
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
